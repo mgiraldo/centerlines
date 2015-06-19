@@ -28,7 +28,7 @@ var map = L.map('map', {layers:ny_2014, maxZoom:21, minZoom:12, scrollWheelZoom:
 control.addTo(map);
 
 // the geojson as it comes from the text document
-var jsonurl = 'https://gist.githubusercontent.com/mgiraldo/cc86b6b043f3ad16a719/raw/78e146a81625ccdd8f3a72b8ea16756dcd641e28/merged.geojson';
+var jsonurl = 'https://gist.githubusercontent.com/mgiraldo/cc86b6b043f3ad16a719/raw/18f5e5233bc64994f81f49d8da3c2736c780d140/merged.geojson';
 
 var topNames, geodata, geolayer, control;
 var words, colors, overlays;
