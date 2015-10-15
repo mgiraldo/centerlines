@@ -1,5 +1,3 @@
-# Building Inspector place names
+# Building Inspector centerlines
 
-Top place names in the Building Inspector dataset. Data obtained via http://buildinginspector.nypl.org/data
-
-GeoJSON from https://gist.github.com/mgiraldo/cc86b6b043f3ad16a719
+All street centerlines in the Building Inspector dataset. More information at http://buildinginspector.nypl.org/
