@@ -559,7 +559,7 @@
 { "type": "Feature", "properties": { "id": 554, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00878, 40.73188 ], [ -74.0086, 40.73268 ] ] } },
 { "type": "Feature", "properties": { "id": 555, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.0086, 40.73268 ], [ -74.00853, 40.73342 ] ] } },
 { "type": "Feature", "properties": { "id": 556, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00853, 40.73342 ], [ -74.00848, 40.73412 ] ] } },
-{ "type": "Feature", "properties": { "id": 557, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00848, 40.73412 ], [ -74.00842, 40.73478 ] ] } },
+{ "type": "Feature", "properties": { "id": 557, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00845, 40.7345 ], [ -74.00842, 40.73478 ] ] } },
 { "type": "Feature", "properties": { "id": 558, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00842, 40.73478 ], [ -74.00836, 40.7355 ] ] } },
 { "type": "Feature", "properties": { "id": 559, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00836, 40.7355 ], [ -74.0083, 40.7362 ] ] } },
 { "type": "Feature", "properties": { "id": 560, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.0083, 40.7362 ], [ -74.00824, 40.73697 ] ] } },
@@ -580,7 +580,7 @@
 { "type": "Feature", "properties": { "id": 575, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00979, 40.73697 ], [ -74.00986, 40.73598 ] ] } },
 { "type": "Feature", "properties": { "id": 576, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00986, 40.73598 ], [ -74.00992, 40.73529 ] ] } },
 { "type": "Feature", "properties": { "id": 577, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00992, 40.73529 ], [ -74.00998, 40.73457 ] ] } },
-{ "type": "Feature", "properties": { "id": 578, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00998, 40.73457 ], [ -74.01005, 40.73385 ] ] } },
+{ "type": "Feature", "properties": { "id": 578, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00998, 40.73457 ], [ -74.01002, 40.73423 ] ] } },
 { "type": "Feature", "properties": { "id": 579, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.01005, 40.73385 ], [ -74.01012, 40.73317 ] ] } },
 { "type": "Feature", "properties": { "id": 580, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.01012, 40.73317 ], [ -74.01019, 40.73244 ] ] } },
 { "type": "Feature", "properties": { "id": 581, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.01019, 40.73244 ], [ -74.01024, 40.73203 ] ] } },
@@ -2389,6 +2389,9 @@
 { "type": "Feature", "properties": { "id": 2387, "streetname": "varick street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00685, 40.71977 ], [ -74.00699, 40.71911 ] ] } },
 { "type": "Feature", "properties": { "id": 2070, "streetname": "staple street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00933, 40.71868 ], [ -74.00949, 40.71799 ] ] } },
 { "type": "Feature", "properties": { "id": 2174, "streetname": "staple street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00949, 40.71799 ], [ -74.00962, 40.71732 ] ] } },
-{ "type": "Feature", "properties": { "id": 2178, "streetname": "harrison street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00933, 40.71868 ], [ -74.00885, 40.71866 ] ] } }
+{ "type": "Feature", "properties": { "id": 2178, "streetname": "harrison street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00933, 40.71868 ], [ -74.00885, 40.71866 ] ] } },
+{ "type": "Feature", "properties": { "id": 2388, "streetname": "charles alley" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.01002, 40.73423 ], [ -74.00845, 40.7345 ] ] } },
+{ "type": "Feature", "properties": { "id": 2389, "streetname": "west street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.01002, 40.73423 ], [ -74.01005, 40.73385 ] ] } },
+{ "type": "Feature", "properties": { "id": 2390, "streetname": "washington street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00845, 40.7345 ], [ -74.00848, 40.73412 ] ] } }
 ]
 }
