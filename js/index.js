@@ -73,7 +73,7 @@ function showNextLine() {
 
   if (currentLine+1 < totalLines-1) {
     currentLine++;
-    window.setTimeout(showNextLine, 150);
+    window.setTimeout(showNextLine, 100);
   } else {
     map.fitBounds(geolayer.getBounds());
     map.closePopup();
