@@ -8,6 +8,19 @@ body{ margin:0; }
     bottom: 0;
 }
 
+#skip {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  background: white;
+  color: #313131;
+  border-radius: 3px;
+  border: 1px solid #878787;
+  padding: 10px;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  cursor: pointer;
+}
+
 #search {
   position: absolute;
   background: rgba(255,255,255,1);

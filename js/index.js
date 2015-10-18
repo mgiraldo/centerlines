@@ -19,39 +19,43 @@ var markers;
 var lineStyle = {
         color: '#f0f',
         opacity: 0.7,
-        weight: 2
+        weight: 3
     };
 
 var fadeStyle = {
         color: '#ff0',
         opacity: 1,
-        weight: 2
+        weight: 3
     };
 
+var skipped = false;
+
 function showMap(geostring) {
-    // parse the geojson string to a proper json structure
-    geodata = JSON.parse(geostring);
+  // parse the geojson string to a proper json structure
+  geodata = JSON.parse(geostring);
+
+  // now make it understandable by leaflet
+  geolayer = L.featureGroup();
   
-    // now make it understandable by leaflet
-    geolayer = L.featureGroup();
-    
-    // add the points to the map
-    geolayer.addTo(map);
-    
-    // zoom the map to the bounds of the points
-    map.setZoom(16);//fitBounds(geolayer.getBounds());
+  // add the points to the map
+  geolayer.addTo(map);
+  var el = document.getElementById("skip"); 
+  el.addEventListener("click", skip);
+  
+  // zoom the map to the bounds of the points
+  map.setZoom(16);//fitBounds(geolayer.getBounds());
   showNextLine();
 }
 
 function showNextLine() {
-  var line = L.geoJson(geodata.features[currentLine],
-                      {
+  if (skipped) return;
+
+  var line = L.geoJson(geodata.features[currentLine], {
     onEachFeature: showPopup,
     style: lineStyle
   });
 
-  var lineFade = L.geoJson(geodata.features[currentLine],
-                      {
+  var lineFade = L.geoJson(geodata.features[currentLine], {
     onEachFeature: fadeOut,
     style: fadeStyle
   });
@@ -66,6 +70,7 @@ function showNextLine() {
   map.panTo(center);
 
   line.openPopup();
+
   if (currentLine+1 < totalLines-1) {
     currentLine++;
     window.setTimeout(showNextLine, 150);
@@ -73,6 +78,22 @@ function showNextLine() {
     map.fitBounds(geolayer.getBounds());
     map.closePopup();
   }
+}
+
+function skip(e) {
+  skipped = true;
+
+  e.target.parentNode.removeChild(e.target);
+
+  map.removeLayer(geolayer);
+
+  var all = L.geoJson(geodata, {
+    onEachFeature: showPopup,
+    style: lineStyle
+  });
+
+  all.addTo(map);
+  map.fitBounds(all.getBounds());
 }
 
 function fadeOut(feature, layer) {
