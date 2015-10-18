@@ -75,6 +75,8 @@ function showNextLine() {
     currentLine++;
     window.setTimeout(showNextLine, 100);
   } else {
+    var el = document.getElementById("skip");
+    el.parentNode.removeChild(el);
     map.fitBounds(geolayer.getBounds());
     map.closePopup();
   }
