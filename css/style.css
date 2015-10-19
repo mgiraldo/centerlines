@@ -48,16 +48,6 @@ body{ margin:0; }
   margin-left: 0;
   border-radius: 10px;
 }
-/* leaflet responsive */
-@media screen and (max-width: 375px){
-  .leaflet-top.leaflet-left {
-    top: 50px;
-  }
-  
-  #search {
-    left: 10px;
-  }
-}
 /* leaflet markercluster stuff */
 .leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
 	-webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
