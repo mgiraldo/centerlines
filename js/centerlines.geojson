@@ -1291,7 +1291,7 @@
 { "type": "Feature", "properties": { "id": 1284, "streetname": "beach street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00763, 40.72051 ], [ -74.00673, 40.72042 ] ] } },
 { "type": "Feature", "properties": { "id": 1285, "streetname": "beach street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00673, 40.72042 ], [ -74.00638, 40.72039 ], [ -74.00597, 40.72037 ] ] } },
 { "type": "Feature", "properties": { "id": 1286, "streetname": "beach street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00597, 40.72037 ], [ -74.00545, 40.72032 ] ] } },
-{ "type": "Feature", "properties": { "id": 1629, "streetname": "water street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00638, 40.72039 ], [ -74.00566, 40.72004 ] ] } },
+{ "type": "Feature", "properties": { "id": 1629, "streetname": "walker street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00638, 40.72039 ], [ -74.00566, 40.72004 ] ] } },
 { "type": "Feature", "properties": { "id": 1287, "streetname": "north moore street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00862, 40.71996 ], [ -74.00685, 40.71977 ] ] } },
 { "type": "Feature", "properties": { "id": 1288, "streetname": "franklin street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00873, 40.71928 ], [ -74.00717, 40.71914 ], [ -74.00699, 40.71911 ] ] } },
 { "type": "Feature", "properties": { "id": 1289, "streetname": "franklin street" }, "geometry": { "type": "LineString", "coordinates": [ [ -74.00699, 40.71911 ], [ -74.00659, 40.71883 ] ] } },

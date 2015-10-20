@@ -180,6 +180,11 @@ function showPopup(feature, layer) {
     layer.bindPopup(content.join("<br />"), {
       closeButton: false
     });
+    layer.on('click', onLineClick);
+}
+
+function onLineClick (e) {
+  map.fitBounds(e.target.getBounds());
 }
 
 var client = new XMLHttpRequest();
