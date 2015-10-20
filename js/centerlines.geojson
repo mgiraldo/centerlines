@@ -2854,7 +2854,7 @@
 { "type": "Feature", "properties": { "id": 2849, "streetname": "east 50th street" }, "geometry": { "type": "LineString", "coordinates": [ [ -73.97077, 40.75582 ], [ -73.97239, 40.75652 ] ] } },
 { "type": "Feature", "properties": { "id": 2850, "streetname": "east 50th street" }, "geometry": { "type": "LineString", "coordinates": [ [ -73.97239, 40.75652 ], [ -73.97395, 40.75716 ] ] } },
 { "type": "Feature", "properties": { "id": 2851, "streetname": "east 50th street" }, "geometry": { "type": "LineString", "coordinates": [ [ -73.97395, 40.75716 ], [ -73.97719, 40.75854 ] ] } },
-{ "type": "Feature", "properties": { "id": 2852, "streetname": "west 51st street" }, "geometry": { "type": "LineString", "coordinates": [ [ -73.97675, 40.75917 ], [ -73.97351, 40.75779 ] ] } },
+{ "type": "Feature", "properties": { "id": 2852, "streetname": "east 51st street" }, "geometry": { "type": "LineString", "coordinates": [ [ -73.97675, 40.75917 ], [ -73.97351, 40.75779 ] ] } },
 { "type": "Feature", "properties": { "id": 2853, "streetname": "east 51st street" }, "geometry": { "type": "LineString", "coordinates": [ [ -73.97351, 40.75779 ], [ -73.97192, 40.75711 ] ] } },
 { "type": "Feature", "properties": { "id": 2854, "streetname": "east 51st street" }, "geometry": { "type": "LineString", "coordinates": [ [ -73.97192, 40.75711 ], [ -73.97027, 40.75646 ] ] } },
 { "type": "Feature", "properties": { "id": 2855, "streetname": "east 51st street" }, "geometry": { "type": "LineString", "coordinates": [ [ -73.97027, 40.75646 ], [ -73.9681, 40.7555 ] ] } },
