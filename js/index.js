@@ -28,7 +28,15 @@ var fadeStyle = {
         weight: 3
     };
 
+var searchStyle = {
+        color: '#0ff',
+        opacity: 1,
+        weight: 4
+    };
+
 var skipped = false;
+
+var searchOverlay;
 
 function showMap(geostring) {
   // parse the geojson string to a proper json structure
@@ -45,6 +53,55 @@ function showMap(geostring) {
   // zoom the map to the bounds of the points
   map.setZoom(16);//fitBounds(geolayer.getBounds());
   showNextLine();
+  var s = document.getElementById("keyword")
+  s.onchange = onKeywordSubmitted;
+  s.value = "";
+}
+
+function search(keyword) {
+  if (searchOverlay) {
+    map.removeLayer(searchOverlay);
+  }
+  var streets = extractStreets(geodata, keyword);
+  if (streets.features.length==0) return;
+  searchOverlay = overlayForStreets(streets);
+  searchOverlay.addTo(map);
+  map.fitBounds(searchOverlay.getBounds());
+}
+
+function onKeywordSubmitted(event) {
+  clearMap();
+  var keyword = event.target.value.trim().toLowerCase();
+  event.target.value = keyword;
+  if (keyword != "") search(keyword);
+}
+
+function clearMap() {
+  if (!skipped) {
+    skip();
+  }
+  if (searchOverlay) {
+    map.removeLayer(searchOverlay);
+  }
+}
+
+function extractStreets(raw, keyword) {
+  result = {}
+  result.type = raw.type;
+  result.features = [];
+  for (var i=0; i<raw.features.length; i++) {
+    if (raw.features[i].properties.streetname.toLowerCase().indexOf(keyword) != -1) {
+      result.features.push(raw.features[i]);
+    }
+  }
+  return result;
+}
+
+function overlayForStreets(streets) {
+  return L.geoJson(streets, {
+    onEachFeature: showPopup,
+    style: searchStyle
+  });
 }
 
 function showNextLine() {
@@ -85,7 +142,8 @@ function showNextLine() {
 function skip(e) {
   skipped = true;
 
-  e.target.parentNode.removeChild(e.target);
+  var el = document.getElementById("skip"); 
+  el.parentNode.removeChild(el);
 
   map.removeLayer(geolayer);
 
@@ -115,6 +173,7 @@ function showPopup(feature, layer) {
           val = val.toUpperCase();
         } else {
           val = "UNNAMED STREET";
+          feature.properties[key] = val;
         }
         content.push(val);
     }
